@@ -1,0 +1,135 @@
+.research-brief {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  align-items: start;
+  margin: -18px 0 76px;
+  padding: 34px 0;
+  border-top: 1px solid #c9c8c0;
+  border-bottom: 1px solid #c9c8c0;
+}
+
+.research-brief h3 {
+  margin: 0;
+  max-width: 900px;
+  font-size: clamp(27px, 3vw, 42px);
+  line-height: 1.25;
+  letter-spacing: -.035em;
+}
+
+.research-brief > p:last-child { max-width: 760px; margin: 0; color: var(--muted); line-height: 1.8; }
+.why-now { margin-bottom: 82px; }
+.subhead { display: grid; grid-template-columns: 190px 1fr; margin-bottom: 32px; }
+.subhead h3 { margin: 0; max-width: 850px; font-size: clamp(28px, 3vw, 44px); line-height: 1.25; }
+
+.market-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #bdbcb5;
+  border: 1px solid #bdbcb5;
+}
+
+.market-metrics article { background: var(--ink); color: var(--white); padding: 30px; min-height: 245px; }
+.market-metrics strong { display: block; color: var(--cyan); font-size: clamp(35px, 4vw, 58px); letter-spacing: -.05em; }
+.market-metrics p { color: #b8b9b5; line-height: 1.65; }
+.market-metrics a, .market-note a { color: var(--red); font: 10px/1.6 DM Mono; }
+
+.market-context {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.market-context article { border: 1px solid #cfcec6; padding: 24px; }
+.market-context span { color: var(--red); font: 10px DM Mono; }
+.market-context h4 { margin: 20px 0 12px; font-size: 20px; line-height: 1.25; }
+.market-context p { color: var(--muted); font-size: 13px; line-height: 1.75; }
+.market-note { color: var(--muted); font: 10px/1.8 DM Mono; }
+
+.research-questions {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  margin: 64px 0 18px;
+  padding-top: 34px;
+  border-top: 1px solid #c9c8c0;
+}
+
+.research-questions ol { counter-reset: rq; margin: 0; padding: 0; list-style: none; }
+.research-questions li { counter-increment: rq; position: relative; padding: 21px 20px 21px 60px; border-bottom: 1px solid #d4d2c9; font-size: 19px; line-height: 1.55; }
+.research-questions li::before { content: "0" counter(rq); position: absolute; left: 0; top: 23px; color: var(--red); font: 12px DM Mono; }
+
+.method-card {
+  display: grid;
+  grid-template-columns: .7fr 1.3fr;
+  gap: 60px;
+  margin-top: 70px;
+  padding: 48px;
+  background: var(--ink);
+  color: var(--white);
+}
+
+.method-card h3 { margin: 14px 0 0; font-size: 32px; line-height: 1.25; }
+.method-card dl { margin: 0; }
+.method-card dl div { display: grid; grid-template-columns: 110px 1fr; gap: 20px; padding: 17px 0; border-top: 1px solid #ffffff26; }
+.method-card dt { color: var(--cyan); font: 10px DM Mono; text-transform: uppercase; }
+.method-card dd { margin: 0; color: #c2c3bf; line-height: 1.6; }
+
+.themes-grid article { padding-bottom: 46px; }
+.themes-grid article > span { font-weight: 600; }
+.themes-grid i { width: calc(var(--count) / 25 * 100%); }
+.time-explainer { display: grid; grid-template-columns: 170px .7fr 1fr; gap: 28px; margin-top: 44px; padding: 30px; border: 1px solid #cbc9bf; }
+.time-explainer h3 { margin: 0; font-size: 26px; }
+.time-explainer p:last-child { margin: 0; color: var(--muted); line-height: 1.7; }
+
+.core-job { display: grid; grid-template-columns: 1fr; gap: 20px; align-items: start; margin-bottom: 52px; }
+.core-job blockquote { max-width: 920px; margin: 0; font-size: clamp(31px, 4vw, 55px); line-height: 1.35; }
+.core-job > p:last-child { max-width: 760px; margin: 0; color: #53645f; line-height: 1.75; }
+
+.context-jobs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #92a9a2; border: 1px solid #92a9a2; }
+.context-jobs article { padding: 30px; background: #f7f8f3; min-height: 250px; }
+.context-jobs span, .forces-map article span { color: #486d63; font: 10px DM Mono; }
+.context-jobs h3 { margin: 38px 0 14px; font-size: 27px; }
+.context-jobs p { color: var(--muted); line-height: 1.7; }
+
+.forces-map { margin-top: 62px; }
+.forces-map > div { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.forces-map article { min-height: 180px; padding: 24px; border: 1px solid #8ca49d; }
+.forces-map article p { margin-top: 28px; line-height: 1.65; }
+
+.outcomes { display: grid; grid-template-columns: .8fr 1.2fr; gap: 70px; margin-top: 64px; padding: 44px; background: var(--ink); color: var(--white); }
+.outcomes h3 { margin: 14px 0 0; font-size: 31px; line-height: 1.25; }
+.outcomes ol { margin: 0; padding-left: 22px; }
+.outcomes li { padding: 12px 0; border-bottom: 1px solid #ffffff25; color: #c9cac5; line-height: 1.6; }
+
+.persona-axis { display: flex; align-items: center; gap: 13px; flex-wrap: wrap; margin: -24px 0 46px; padding: 18px 0; border-top: 1px solid #ffffff26; border-bottom: 1px solid #ffffff26; }
+.persona-axis p { margin: 0 18px 0 0; color: var(--cyan); font: 10px DM Mono; }
+.persona-axis i { color: #5e605c; font-style: normal; }
+.persona-axis span { margin-left: auto; color: #8e908b; font-size: 12px; }
+.axis-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 24px 0; }
+.axis-tags span { padding: 7px 9px; border: 1px solid #ffffff31; color: var(--cyan); font: 9px DM Mono; }
+.personas article { min-height: 520px; }
+.personas .avatar { margin-bottom: 30px; }
+.method-note.inverse { color: #81837e; margin-top: 24px; }
+
+.voc-evidence { display: grid; grid-template-columns: 290px 1fr; gap: 30px; margin: -20px 0 40px; padding: 24px 0; border-top: 1px solid #c9c8c0; border-bottom: 1px solid #c9c8c0; }
+.voc-evidence strong { color: var(--red); font-size: 18px; }
+.voc-evidence p { margin: 0; color: var(--muted); line-height: 1.7; }
+.quotes figure { border-top: 3px solid var(--red); }
+
+@media (max-width: 1050px) {
+  .market-context { grid-template-columns: repeat(2, 1fr); }
+  .forces-map > div { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 800px) {
+  .research-brief, .subhead, .research-questions, .method-card, .time-explainer, .core-job, .outcomes, .voc-evidence { grid-template-columns: 1fr; gap: 18px; }
+  .research-brief > p:last-child, .core-job > p:last-child { grid-column: auto; }
+  .market-metrics, .market-context, .context-jobs, .forces-map > div { grid-template-columns: 1fr; }
+  .method-card { padding: 30px 24px; }
+  .method-card dl div { grid-template-columns: 82px 1fr; }
+  .core-job blockquote { font-size: 32px; }
+  .persona-axis span { width: 100%; margin: 8px 0 0; }
+  .personas article { min-height: auto; }
+}
